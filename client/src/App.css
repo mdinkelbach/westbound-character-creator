@@ -1,0 +1,360 @@
+/* include tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+nav {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    /* logo will now shrink proportionately */
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
+}
+
+.modal-text p {
+    color: black;
+}
+
+.header h1 {
+    display: flex;
+    font-size: 3rem;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+}
+
+.header h2:hover, nav a:hover {
+    background-color: #555;
+}
+
+.left-nav {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+}
+
+.nav-option {
+    margin: 0 1.25rem 0 1.25rem;
+}
+
+.home-container {
+    display: flex;
+    max-width: 100%;
+    min-width: 75vw;
+    max-height: 100%;
+    min-height: 75vh;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.business-container {
+    display: flex;
+    flex-direction: column;
+    width: 85rem;
+}
+
+.home-container h2 {
+    padding: .5rem;
+    text-align: center;
+}
+
+.business-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 25px;
+    font-size: 1.25rem;
+    width: 25rem;
+    height: 26.5rem;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.card-image {
+    padding: .25rem;
+    border-radius: 25px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    padding: .25rem;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+    border-radius: 25px;
+    outline-style: dotted;
+}
+
+.card-desc {
+    padding: .25rem;
+}
+
+.about {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    max-height: 100%;
+    justify-content: space-between;
+    background-image: url(./assets/logo_light.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.mission {
+    display: flex;
+    height: 15vh;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: .5rem;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.mission p {
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: white;
+    opacity: 80%;
+}
+
+.contributors {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.contributors h2 {
+    padding: 1rem;
+}
+
+.contributors ul{
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.portfolio-card {
+    font-size: 1.5rem;
+    outline-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #777;
+}
+
+.portfolio-card p {
+    padding: .5rem
+}
+
+.portfolio-card:hover {
+    background-color: #999;
+}
+
+.signup-form {
+    width: 26rem;
+    height: 45rem;
+}
+
+.login-form {
+    width: 18rem;
+    height: 21rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile, .business-profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    max-height: 100%;
+    align-items: center;
+}
+
+.user-profile h2, .business-profile h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.user-profile p {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.user-profile button {
+    margin: 1rem
+}
+
+.business-profile {
+    justify-content: space-between;
+}
+
+.business-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.business {
+    margin: 2rem;
+}
+
+.business-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-title img {
+    height: 15rem;
+    border-radius: 25px;
+    outline-style: solid;
+}
+
+.products {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info p {
+    font-size: 1.75rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 15rem;
+    height: 10.9rem;
+    border-radius: 25px;
+}
+
+.favorite-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.favorite-group-items {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.favorite-item {
+    height: 30rem;
+}
+
+.favorite-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite-info p {
+    margin: 0;
+}
+
+.business-info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.business-info p {
+    font-size: 2rem;
+}
+
+.business-desc {
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-option {
+        margin: 0 1rem 0 1rem;
+    }
+    .contributors ul {
+        width: 75vw;
+    }
+    .mission h2, .contributors {
+        font-size: 1.5rem;
+    }
+    .mission p, .portfolio-card {
+        font-size: 1rem;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .nav-option {
+        margin: 0 .75rem 0 .75rem;
+    }
+    .contributors ul {
+        width: 85vw;
+    }
+  }
