@@ -1,6 +1,9 @@
 const User = require('./User');
-const Business = require('./Business');
-const Product = require('./Product');
-const Category = require('./Category');
+const Character = require('./Character');
+const Breed = require('./Breed');
+const Sort = require('./Sort');
+const Archetype = require('./Archetype');
+const Equipment = require('./Equipment');
+const Trait = require('./Trait');
 
-module.exports = { User, Business, Product, Category };
+module.exports = { User, Character, Breed, Sort, Archetype, Equipment, Trait };
