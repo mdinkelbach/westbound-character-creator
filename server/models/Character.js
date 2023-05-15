@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const Trait = require('./Trait')
 const Equipment = require('./Equipment')
-const Craft = require('./Craft')
+//const Craft = require('./Craft')
 
 const characterSchema = new Schema({
   characterName: {
@@ -74,8 +74,7 @@ const characterSchema = new Schema({
     ref: 'Class'
   },
   traits: [Trait.schema],
-  equipments: [Equipment.schema],
-  crafts: [Craft.schema],
+  equipments: [Equipment.schema]
   
 });
 
