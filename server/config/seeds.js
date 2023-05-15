@@ -1,5 +1,5 @@
 const db = require('./connection');
-const { User, Business, Category, Product } = require('../models');
+const { User, Business, Category, Trait } = require('../models');
 
 db.once('open', async () => {
   await Category.deleteMany();
@@ -13,16 +13,14 @@ db.once('open', async () => {
   ]);
   console.log('categories seeded');
 
-  await Product.deleteMany();
+  await Trait.deleteMany();
 
-  const products = await Product.insertMany([
+  const traits = await Trait.insertMany([
     {
-      productName: 'Birdhouse',
+      traitName: 'Mettle',
       description:
-        'Cute wooden birdhouse for your backyard.',
-      image: 'birdhouse.jpg',
-      price: 25.99,
-      quantity: 2,
+        'Your body and mind are accustomed to danger and stress. You are proficient in withstanding poisons, illnesses, and prolonged external forces such as extreme weather.',
+      suit: 2
     },
     {
       productName: 'Bison Billfold Wallet',
